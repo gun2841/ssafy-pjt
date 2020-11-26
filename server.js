@@ -38,9 +38,9 @@ io.on("connection", function (socket) {
             const array = data.reduce((acc, cur) => {
                 acc.push({
                     time:cur.dataValues.time,
-                    num1:cur.dataValues.num1,
                     num2:cur.dataValues.num2,
-                    num3:cur.dataValues.num3
+                    num3: cur.dataValues.num3,
+                    speed: cur.dataValues.speed,
                 });
                 return acc;
             }, []);
